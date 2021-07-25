@@ -1,0 +1,47 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+dataDir: content/data
+models:
+  page_data:
+    type: data
+    label: Page Data
+    file: pageData.yaml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: welcomeText
+          label: Welcome Text
+        - type: string
+          name: landingText
+          label: Landing Text
+  services:
+    type: data
+    label: Services
+    file: services.yaml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: title
+          label: Title
+        - type: image
+          name: src
+          label: Src
+  team:
+    type: data
+    label: Team
+    file: team.yaml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: name
+          label: Name
+        - type: string
+          name: img
+          label: Img
